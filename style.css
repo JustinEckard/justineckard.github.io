@@ -53,9 +53,35 @@ body {
     color: var(--ORANGE);
 }
 
-p {
+p,
+a {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+@media screen and (width <= 500px) {
+    p,
+a {
     font-size: 16px;
 }
+
+h1 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+}
+}
+
+
 
 a,
 .more-details-button {
@@ -116,9 +142,18 @@ a:hover,
     border-radius: 50%;
 }
 
+.info-item {
+    border-left: 1px solid #777;
+    padding: 0 10px;
+}
+
 .details,
 .default-gap {
     gap: 20px;
+}
+
+.large-gap {
+    gap: 30px;
 }
 
 .small-gap {
@@ -135,6 +170,10 @@ a:hover,
 
 .fa-solid.fa-angle-down {
     transition: 0.3s all ease-in-out;
+}
+
+.info-item .emoji{
+    font-size: 20px;
 }
 
 @media screen and (width <= 660px) {
