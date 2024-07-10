@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Eckard</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script> 
     <script src="https://kit.fontawesome.com/4171a56f61.js" crossorigin="anonymous"></script>
 </head>
 <body class="container body-wrap flex-column">
@@ -12,11 +14,11 @@
         <img src="./assets/images/profile-img.png" alt="" class="profile-image">
         <div class="details flex-column">
             <h1>Justin Eckard</h1>
-            <div class="email flex align-center">
+            <div class="email flex align-center default-gap">
                 <i class="fa-solid fa-envelope"></i>
                 <h3><a href="mailto:justineckard02@gmail.com">justineckard02@gmail.com</a></h3>
             </div>
-            <div class="resume-download flex">
+            <div class="resume-download flex default-gap">
                 <i class="fa-solid fa-download"></i>
                 <a class="text-secondary" href="#"><span>Download my pdf resume</span></a>
             </div>
@@ -28,17 +30,39 @@
     </section>
     
     <section class="bio">
-        <div class="title flex align-center">
+        <div class="title flex align-center default-gap">
             <i class="fa-solid fa-ghost"></i>
             <h2>Bio</h2>
         </div>
-        
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt interdum turpis fermentum dictum. Nulla fringilla neque nec tincidunt aliquam. Cras quis lacus a nisi convallis condimentum. Maecenas finibus nec magna ac elementum. Suspendisse potenti. Etiam sit amet ligula urna.
-            <br/>
-            <br/>
-            Aenean vehicula congue scelerisque. Donec luctus ut ipsum molestie molestie. Aenean metus enim, ullamcorper non lorem at, dapibus fringilla sapien.
         </p>
+    </section>
+
+    <section class="work-experience">
+        <div class="title flex align-center default-gap">
+            <i class="fa-regular fa-keyboard"></i>
+            <h2>Work Experience</h2>
+        </div>
+        <div class="work-item">
+            <span class="details flex">
+                <span>&#x1F47D;</span>
+                <div class="content flex-column small-gap">
+                    <p>Intern Software Developer @ Benchmark Digital</p>
+                    <p class="text-secondary">July 2021 - September of 2022</p>
+                    <div class="more-details-button flex default-gap align-center">
+                        <i class="fa-solid fa-angle-down fa-spin"></i>
+                        <p>More Details</p>
+                    </div>
+                    <div class="more-details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt interdum turpis fermentum dictum. Nulla fringilla neque nec tincidunt aliquam. Cras quis lacus a nisi convallis condimentum. Maecenas finibus nec magna ac elementum. Suspendisse potenti. Etiam sit amet ligula urna.</p>
+                    </div>
+                </div>
+                
+            </span>
+        </div>
+
+        
     </section>
 </body>
 </html>
