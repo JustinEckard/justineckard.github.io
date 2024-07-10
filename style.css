@@ -1,0 +1,111 @@
+/* kode-mono-regular - latin_latin-ext */
+/* kode-mono-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/Kobe-mono/kode-mono-v2-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kode-mono-500 - latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/Kobe-mono/kode-mono-v2-latin_latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kode-mono-600 - latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/Kobe-mono/kode-mono-v2-latin_latin-ext-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kode-mono-700 - latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/Kobe-mono/kode-mono-v2-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+ :root {
+    --PURPLE : #a64eda;
+    --ORANGE : #F69642;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background : #222;
+    color: #c7c7c7;
+    font-weight: 500;
+    font-family: 'Kode Mono';
+}
+
+.text-secondary {
+    color: var(--ORANGE);
+}
+
+a {
+    color: #c7c7c7;
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+}
+
+a:hover {
+    color: var(--PURPLE);
+    padding-left: 3px;
+}
+/* Utilities */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.hero {
+    gap : 50px;
+}
+
+.hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.details {
+    gap: 20px;
+}
+
+i {
+    padding-right: 20px;
+}
