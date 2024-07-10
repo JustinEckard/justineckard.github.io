@@ -57,16 +57,20 @@ p {
     font-size: 16px;
 }
 
-a {
+a,
+.more-details-button {
     color: #c7c7c7;
     text-decoration: none;
     transition: 0.2s all ease-in-out;
 }
 
-a:hover {
+a:hover,
+.more-details-button:hover {
     color: var(--PURPLE);
     padding-left: 3px;
 }
+
+
 /* Utilities */
 
 .container {
@@ -112,12 +116,13 @@ a:hover {
     border-radius: 50%;
 }
 
-.details {
+.details,
+.default-gap {
     gap: 20px;
 }
 
-i {
-    padding-right: 20px;
+.small-gap {
+    gap: 10px;
 }
 
 .title {
@@ -126,6 +131,10 @@ i {
 
 .title i {
     font-size: 30px;
+}
+
+.fa-solid.fa-angle-down {
+    transition: 0.3s all ease-in-out;
 }
 
 @media screen and (width <= 660px) {
