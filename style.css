@@ -93,9 +93,17 @@ a,
 a:hover,
 .more-details-button:hover {
     color: var(--PURPLE);
-    padding-left: 3px;
+    padding-left: 2px;
 }
 
+p a {
+    color: var(--ORANGE);
+    transition: 0.2s all ease-in-out;
+}
+
+p a:hover {
+    color: var(--PURPLE);
+}
 
 /* Utilities */
 
@@ -172,8 +180,16 @@ a:hover,
     transition: 0.3s all ease-in-out;
 }
 
+.info-date  {
+    font-size: 14px;
+}
+
 .info-item .emoji{
     font-size: 20px;
+}
+
+ul {
+    padding: 20px;
 }
 
 @media screen and (width <= 660px) {
