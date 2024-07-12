@@ -1,41 +1,10 @@
-bio:
-  label: Bio
-  type: rich_text
-work_experience:
-  label: Work Experience
-  type: list
-  fields:
-    title:
-      label: Title
-      type: string
-    location:
-      label: Location
-      type: string
-    from_date:
-      label: From Date
-      type: date
-    to_date:
-      label: To Date
-      type: date (optional)
-    description:
-      label: Description
-      type: rich_text
-education:
-  label: Education
-  type: list
-  fields:
-    title:
-      label: Title
-      type: string
-    institution:
-      label: Institution
-      type: string
-    from_date:
-      label: From Date
-      type: date
-    to_date:
-      label: To Date
-      type: date (optional)
-    description:
-      label: Description
-      type: rich_text
+content:
+  - name: docs
+    label: Documentation
+    path: assets
+    type: collection
+    view: 
+      fields: [ title, order ]
+      primary: title
+    fields: 
+      - { name: test, label: title, type: string }
