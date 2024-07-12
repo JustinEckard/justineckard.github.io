@@ -1,9 +1,41 @@
-media: assets/images
-content:
-  - name: home
-    label: Home Page
-    type: file
-    path: index.html
-    fields:
-      - { name: title, label: Title, type: string }
-      - { name: body, label: Body, type: rich-text}
+bio:
+  label: Bio
+  type: rich_text
+work_experience:
+  label: Work Experience
+  type: list
+  fields:
+    title:
+      label: Title
+      type: string
+    location:
+      label: Location
+      type: string
+    from_date:
+      label: From Date
+      type: date
+    to_date:
+      label: To Date
+      type: date (optional)
+    description:
+      label: Description
+      type: rich_text
+education:
+  label: Education
+  type: list
+  fields:
+    title:
+      label: Title
+      type: string
+    institution:
+      label: Institution
+      type: string
+    from_date:
+      label: From Date
+      type: date
+    to_date:
+      label: To Date
+      type: date (optional)
+    description:
+      label: Description
+      type: rich_text
