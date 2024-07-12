@@ -1,212 +1,29 @@
----
-title: Home Page
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Eckard</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./jquery-3.7.1.min.js"></script>
-    <script src="./script.js"></script> 
-    <script src="https://kit.fontawesome.com/4171a56f61.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CMS Content</title>
 </head>
-<body class="container body-wrap flex-column">
-    <section class="hero flex align-center">
-        <img src="./assets/images/profile-img.png" alt="" class="profile-image">
-        <div class="details flex-column">
-            <h1>Justin Eckard</h1>
-            <div class="email flex align-center default-gap">
-                <i class="fa-solid fa-envelope"></i>
-                <h3><a href="mailto:justineckard02@gmail.com">justineckard02@gmail.com</a></h3>
-            </div>
-            <div class="resume-download flex default-gap">
-                <i class="fa-solid fa-download"></i>
-                <a class="text-secondary" href="#"><span>Download my pdf resume</span></a>
-            </div>
-        </div>
-    </section>
+<body>
+  <h1>CMS Documentation</h1>
+  <ul id="docs-list"></ul>  <script>
+    // Access the element containing CMS data
+    const docsListElement = document.getElementById('docs-list');
 
-    <section class="quicklinks">
+    // Extract data from HTML elements (replace with specific logic based on HTML structure)
+    const docs = [];
+    const listItems = docsListElement.querySelectorAll('li');
+    for (const item of listItems) {
+      docs.push({ title: item.textContent }); // Modify this to extract desired data
+    }
 
-    </section>
-    
-    <section class="bio">
-        <div class="title flex align-center default-gap">
-            <i class="fa-solid fa-ghost"></i>
-            <h2>Bio</h2>
-        </div>
-        <p>
-            I am a software developer based in Cape Town, South Africa, currently I work as a web developer at <a href="https://web2web.co.za/">Web2Web</a>, a marketing and web agency in Cape Town.
-            <br/>
-            I am also studying a BSc Software Development degree through the <a href="https://www.iu.org">International University of Applied Sciences</a> based in Bad-Honnef Germany.
-        </p>
-    </section>
-
-    <section class="work-experience ">
-        <div class="title flex align-center default-gap">
-            <i class="fa-regular fa-keyboard"></i>
-            <h2>Work Experience</h2>
-        </div>
-        <div class="info-items flex-column large-gap">
-            <div class="info-item ">
-                <span class="details flex">
-                    <span class="emoji">&#x1F47D;</span>
-                    <div class="content flex-column small-gap">
-                        <p>Junior Software Developer @ <a href="https://web2web.co.za/">Web2Web</a></p>
-                        <p class="text-secondary info-date">December 2023 - present</p>
-                        <div class="more-details-button flex default-gap align-center">
-                            <i class="fa-solid fa-angle-down  "></i>
-                            <p>More Details</p>
-                        </div>
-                        <div class="more-details">
-                            <p>This is my current full time job.</p>
-                            <ul>
-                                <h4 class="text-secondary">Responsibilities</h4>
-                                <li>Custom Theme development for Wordpress</li>
-                                <li>Maintaining a variety of Wordpress and other sites</li>
-                                <li>Adding and changing content and template files on Wordpress and other sites</li>
-                            </ul>
-                            <ul>
-                                <h4 class="text-secondary">Technologies</h4>
-                                <li>PHP</li>
-                                <li>HTML, CSS, JS</li>
-                                <li>JQuery</li>
-                                <li>Python for simple scripts</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </span>
-            </div>
-            <div class="info-item ">
-                <span class="details flex">
-                    <span class="emoji">&#x1F916;</span>
-                    <div class="content flex-column small-gap">
-                        <p>Intern Software Developer @ <a href="https://benchmark.digital/">Benchmark Digital</a></p>
-                        <p class="text-secondary info-date">June 2022 - June 2023</p>
-                        <div class="more-details-button flex default-gap align-center">
-                            <i class="fa-solid fa-angle-down  "></i>
-                            <p>More Details</p>
-                        </div>
-                        <div class="more-details">
-                            <p>I worked at Benchmark digital during my studies at the University of Pretoria, I left due to relocating with my family from Pretoria South Africa to Cape Town South Africa</p>
-                            <ul>
-                                <h4 class="text-secondary">Responsibilities</h4>
-                                <li>Maintaining a variety of Wordpress and other sites</li>
-                                <li>Adding and changing content Wordpress and other sites</li>
-                            </ul>
-                            <ul>
-                                <h4 class="text-secondary">Technologies</h4>
-                                <li>PHP</li>
-                                <li>HTML, CSS, JS</li>
-                            </ul>
-                        </div>
-                    </div>
-                </span>
-            </div>
-
-            <div class="info-item ">
-                <span class="details flex">
-                    <span class="emoji">&#x1F4A5;</span>
-                    <div class="content flex-column small-gap">
-                        <p>Shop technician @ <span class="text-secondary">Gumbatechnology</span></p>
-                        <p class="text-secondary info-date">March 2021 - September 2021</p>
-                        <div class="more-details-button flex default-gap align-center">
-                            <i class="fa-solid fa-angle-down  "></i>
-                            <p>More Details</p>
-                        </div>
-                        <div class="more-details">
-                            <p>I worked at Gumbatechnology during my final year of highschool.</p>
-                            <ul>
-                                <h4 class="text-secondary">Responsibilities</h4>
-                                <li>Building and repair of custom build PCs and laptops</li>
-                                <li>Customer interaction and relations in the storefront</li>
-                                <li>On site installation of technology, such as PCs printers etc.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </span>
-            </div>
-        </div>
-    </section>
-    <section class="work-experience ">
-        <div class="title flex align-center default-gap">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h2>Education & Certification</h2>
-        </div>
-        <div class="info-items flex-column large-gap">
-            <div class="info-item ">
-                <span class="details flex">
-                    <span class="emoji">&#x1F47E;</span>
-                    <div class="content flex-column small-gap">
-                        <p>BSc Software Development @ <a href="https://www.iu.org">IU</a>  </p>
-                        <p class="text-secondary info-date">July 2023 - January of 2025</p>
-                        <div class="more-details-button flex default-gap align-center">
-                            <i class="fa-solid fa-angle-down  "></i>
-                            <p>More Details</p>
-                        </div>
-                        <div class="more-details">
-                            <p>I am finishing my Bachelor's Degree at IU after having to leave the University of Pretoria due to relocating with my family.</p>
-                            <br>
-                            <p>It is an online distance-learning program for which I am fully responsible for all time management, studying and exam organization.</p>
-                            <br>
-                            <p>The freedom to study in whatever way suits my schedule that IU has offered has taught me a lot about time management and self discipline</p>
-                            <ul>
-                                <h4 class="text-secondary">Technologies</h4>
-                                <li>Web based Programming</li>
-                                <li>Android Studio for mobile app development</li>
-                                <li>Agile principles</li>
-                                <li>Cloud programming using AWS</li>
-                                <li>HTML, CSS, JS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </span>
-            </div>
-            <div class="info-item ">
-                <span class="details flex">
-                    <span class="emoji">&#x26c5;</span>
-                    <div class="content flex-column small-gap">
-                        <p>AWS Cloud Practitioner @ <a href="./assets/documents/AWS Certified Cloud Practitioner certificate.pdf" download target="_blank">Download Certificate</a></p>
-                        <p class="text-secondary info-date">January 2021 - June 2023</p>
-                        <div class="more-details-button flex default-gap align-center">
-                            <i class="fa-solid fa-angle-down  "></i>
-                            <p>More Details</p>
-                        </div>
-                        <div class="more-details">
-                            <p>The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology.  This is a good starting point on the AWS Certification journey for individuals with no prior IT or cloud experience switching to a cloud career or for line-of-business employees looking for foundational cloud literacy.</p>
-                            <p class="text-secondary">
-                                <a href="./assets/documents/AWS Certified Cloud Practitioner certificate.pdf" download target="_blank">You can view my certificate here</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                </span>
-            </div>
-            <div class="info-item ">
-                <span class="details flex">
-                    <span class="emoji">&#x1FABC;</span>
-                    <div class="content flex-column small-gap">
-                        <p>Bachelor's Program @ <a href="https://www.up.ac.za/">University of Pretoria</a></p>
-                        <p class="text-secondary info-date">January 2021 - June 2023</p>
-                        <div class="more-details-button flex default-gap align-center">
-                            <i class="fa-solid fa-angle-down  "></i>
-                            <p>More Details</p>
-                        </div>
-                        <div class="more-details">
-                            <p>During the national pandemic lockdown I started studying a Bachelor's degree in Computer Science at the University of Pretoria, but had to discontinue my studies there when I relocated to Cape Town, I was accredited the work i did there and managed to pick up where I left off online at <a href="https://www.iu.org">IU</a> and I plan to finish my degree there by January of 2025. </p>
-                        </div>
-                    </div>
-                    
-                </span>
-            </div>
-        </div>
-
-        
-    </section>
+    // Display data dynamically using the extracted data (replace with your HTML structure)
+    docs.forEach(doc => {
+      const listItem = document.createElement('li');
+      listItem.textContent = doc.title;
+      docsListElement.appendChild(listItem);
+    });
+  </script>
 </body>
 </html>
