@@ -1,1 +1,9 @@
 media: assets/images
+content:
+  - name: interests
+    label: Interests
+    type: collection
+    path: assets/interests
+    fields:
+      - { name: title, label: Title, type:string }
+      - { name: body, label: Body, type: rich-text}
